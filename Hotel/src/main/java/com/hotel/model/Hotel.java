@@ -4,35 +4,47 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author Rachana Sharma
+ * Model Class Hotel
+ */
 @Entity
 @Table
-public class Hotel 
-{
+public class Hotel {
+	/**
+	 * the Id
+	 */
+	@Id
+	@Column
+	private int id;
+	/**
+	 * The Name
+	 */
+	@Column
+	private String name;
 
-@Id
-@Column
-private int id;
-
-@Column
-private String name;
-
-
-public int getId() 
-{
-return id;
-}
-public void setId(int id) 
-{
-this.id = id;
-}
-public String getName() 
-{
-return name;
-}
-public void setName(String name) 
-{
-this.name = name;
-}
-
-
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}	
 }
